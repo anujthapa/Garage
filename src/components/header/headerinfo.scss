@@ -1,0 +1,43 @@
+.header-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+  height: 3vh;
+  align-content: center;
+  width: 70vw;
+  font-size: 1.5vh;
+
+  .header-socialmedia {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    *div {
+    
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  .header-auth {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .header-info {
+    width: 100vw;
+    .header-socialmedia {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-content: center;
+
+      .social {
+        width: 3vw;
+      }
+    }
+  }
+}

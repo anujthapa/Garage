@@ -1,0 +1,132 @@
+.subscribe{
+  display: flex;
+  flex-wrap: wrap;
+  height: 70vh;
+  width:70vw;
+  margin-top:.5vh;
+  position: relative;
+
+  .newsletter-border{
+    position: absolute;
+    left:7vh;
+    bottom:10vh;
+  }
+  .newsletter-section{
+   
+  flex:1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+
+  *{
+    width:60%;
+    text-align: justify;
+  }
+  
+  }
+  .subscribe-section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex:1;
+    background-image: url(../../assets/images/newsletter.jpg);
+    background-repeat: no-repeat;
+
+
+    input[type="text"]{
+    width:30vh;
+    padding: 1vh;
+    background:transparent;
+    color:white;
+    text-align: left;
+    font-size: 3vh;
+    font-weight: bold;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    margin-bottom: 2vh;
+   
+    }
+    button{
+      width:30vh;
+      height: 5vh;
+      background:transparent;
+      color:white;
+      font-size: 3vh;
+      text-align: center;
+      font-weight: bold;
+      
+    }
+  }
+}
+@media screen and (max-width:1280px){
+  .subscribe{
+    display: flex;
+    flex-wrap: wrap;
+    height: 70vh;
+    width:100vw;
+    margin-top:.5vh;
+    position: relative;
+  
+    .newsletter-border{
+      position: absolute;
+      left:10vw;;
+      top:1vh;
+    }
+    .newsletter-section{
+     
+    flex:1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-left: 5vw;
+          
+  
+    *{
+      width:60%;
+      text-align: justify;
+    }
+    
+    }
+    .subscribe-section{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      flex:1;
+      background-image: url(../../assets/images/newsletter.jpg);
+      background-repeat: no-repeat;
+  
+  
+      input[type="text"]{
+      width:30vh;
+      padding: 1vh;
+      background:transparent;
+      color:white;
+      text-align: left;
+      font-size: 3vh;
+      font-weight: bold;
+      border-top:none;
+      border-left:none;
+      border-right:none;
+      margin-bottom: 2vh;
+     
+      }
+      button{
+        width:30vh;
+        height: 5vh;
+        background:transparent;
+        color:white;
+        font-size: 3vh;
+        text-align: center;
+        font-weight: bold;
+        
+      }
+    }
+  }
+}

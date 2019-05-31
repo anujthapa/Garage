@@ -1,0 +1,111 @@
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+  .features-heading {
+    width: 100%;
+  }
+  .features-cars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .feature{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      border-top:black 1px solid;
+      border-bottom:black 1px solid;
+      .feature-img {
+        flex: 1;
+       width:15vw;
+      
+        img {
+          max-width: 100%;
+          height: auto;
+          object-fit: fill;
+        
+        }
+      }
+      .feature-desc {
+        flex: 1;
+        width:20vw;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-content: space-around;
+        .content{
+          display: flex;
+          flex-wrap: wrap; 
+          
+          justify-content: center; 
+          width: 15vw;
+          height: 35vh;
+          border:1px #D7B041 solid;
+ *{
+   flex:70%;
+ }
+        }
+      
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width:1280px){
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .features-heading {
+      width: 100%;
+    }
+    .features-cars {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .feature{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border-top:black 1px solid;
+        border-bottom:black 1px solid;
+        .feature-img {
+          flex: 1;
+         width:25vw;
+        
+          img {
+            max-width: 100%;
+            height: auto;
+            object-fit: fill;
+          
+          }
+        }
+        .feature-desc {
+          flex: 1;
+          width:25vw;
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          justify-content: center;
+          align-content: space-around;
+          .content{
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center; 
+            width: 20vw;
+            height: 50vh;
+            border:1px #D7B041 solid;
+   *{
+     flex:70%;
+   }
+          }
+        
+        }
+      }
+    }
+  }
+
+}

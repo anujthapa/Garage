@@ -1,0 +1,152 @@
+.latest-cars {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80vw;
+  
+  .car-filter{
+    width:60vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 5vh;
+
+    button{
+      flex:1;
+    }
+  }
+
+  .car {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .cars {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+    img {
+      max-width: 100%;
+    }
+   
+    .car-info {
+      background: rgba(255, 255, 255, 0.6);
+      width: 15vw;
+      height: 30vh;
+      position: absolute;
+      z-index: 1;
+      color: black;
+      display: none;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: center;
+
+      * {
+        flex: 100%;
+      }
+    }
+  }
+  .cars:hover .car-info{
+    display: flex;
+   
+  }
+  .cars:hover img{
+    animation: zoomin 3s ease-in;
+  }
+}
+@keyframes zoomin {
+  0% {
+    transform: scale(1);
+  }
+ 
+  50% {
+    transform: scale(1.2);
+  }
+  
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width:1280px){
+  .latest-cars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+    .car-filter{
+      width:60vw;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      height: 10vh;
+
+  
+      button{
+        flex:1;
+      }
+    }
+  
+    .car {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      .cars {
+        width:25%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+      }
+      img {
+        max-width: 100%;
+      }
+     
+      .car-info {
+        background: rgba(255, 255, 255, 0.6);
+        width: 20vw;
+        height: 40vh;
+        position: absolute;
+        z-index: 1;
+        color: black;
+        display: none;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+  
+        * {
+          flex: 100%;
+        }
+      }
+    }
+    .cars:hover .car-info{
+      display: flex;
+     
+    }
+    .cars:hover img{
+      animation: zoomin 3s ease-in;
+    }
+  }
+  @keyframes zoomin {
+    0% {
+      transform: scale(1);
+    }
+   
+    50% {
+      transform: scale(1.2);
+    }
+    
+    100% {
+      transform: scale(1);
+    }
+  }
+}
